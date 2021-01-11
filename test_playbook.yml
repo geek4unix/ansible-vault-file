@@ -1,0 +1,10 @@
+# this playbook uses https://github.com/PowerDNS/pdns-ansible.git
+# Masters definition
+
+- hosts: masters
+  roles:
+    - { role: vaulttest }
+  vars:
+    mood: tired
+  vars_files:
+    - encrypted/vars.yml

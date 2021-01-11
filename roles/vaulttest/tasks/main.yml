@@ -1,0 +1,8 @@
+---
+- name: Write /root/test.txt as template, with decrypted vars
+  template:
+    src: test.txt.template
+    dest: /root/test.txt
+    owner: root
+    group: root
+    mode: '0600'
